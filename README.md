@@ -1,4 +1,4 @@
-# ECE 411: mp_ooo
+# <course>: mp_ooo
 
 This document, README.md, forms the specification for the machine problem. For
 more details and documentation, visit the `docs` folder. Inside, you will find:
@@ -58,7 +58,7 @@ progress on the MP and grade your checkpoints.
 The two weeks after will be for Advanced Features, where you improve the
 performance of your baseline RV32IM processor on a set of staff-provided
 benchmarks. Your goal will be to outperform a fixed set of performance targets
-and baseline processors. Unlike prior semesters of ECE 411, **you will not be
+and baseline processors. Unlike prior semesters of <course>, **you will not be
 graded relative to your peers' submissions**.
 
 During this time, there will be a Design Competition run in parallel.  Course
@@ -337,3 +337,4 @@ with such issues. Ensure that you take the following actions:
 Team members who under-contribute or contribute nothing will lose part or all
 (100%) of their final `mp_ooo` grade, depending on severity. These points may be
 reallocated/awarded to other groupmates who had to over-contribute as a result.
+
