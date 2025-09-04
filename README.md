@@ -1,10 +1,10 @@
-# <course>: mp_ooo
+# <course>: 
 
 This document, README.md, forms the specification for the machine problem. For
 more details and documentation, visit the `docs` folder. Inside, you will find:
 
 - [GUIDE.md](./docs/GUIDE.md): Some tips and resources for this MP.
-- [WHAT_IS_AN_OOO.md](./docs/WHAT_IS_AN_OOO.md): Basic overview of an OoO
+- [WHAT_IS_AN_xxx.md](./docs/WHAT_IS_AN_xxx.md): Basic overview of an xxx
   processor.
 - [ADVANCED_FEATURES.md](./docs/ADVANCED_FEATURES.md): List of potential
   advanced features and related advice.
@@ -12,7 +12,7 @@ more details and documentation, visit the `docs` folder. Inside, you will find:
 
 # Introduction
 
-This machine problem involves the design of an out-of-order microprocessor. You
+This machine problem involves the design of an xxx-xx-xxxxx microprocessor. You
 are required to implement the RV32IM instruction set (with the
 exception of the `FENCE*`, `ECALL`, `EBREAK`, and `CSRR` instructions). This handout is an incomplete
 specification to get you started with your design.
@@ -34,12 +34,12 @@ date.
 
 Students can also score up to 10 points of extra credit by making additional
 advanced features - more about this will be announced as we approach the
-Advanced Features phase of `mp_ooo`. The maximum possible grade on this MP will
+Advanced Features phase of ``. The maximum possible grade on this MP will
 be *110 points*.
 
 ## Overview
 
-By the end of this MP, you will make an out-of-order processor implementing:
+By the end of this MP, you will make an xxx-xx-xxxxx processor implementing:
 
 - Either Tomasulo's Algorithm or an Explicit Register Renaming scheme
 - Split instruction cache and data cache
@@ -47,7 +47,7 @@ By the end of this MP, you will make an out-of-order processor implementing:
 - Advanced features of your choice
 
 In total, this MP will span 8 weeks. In the first five weeks, you will
-develop the core microarchitecture for an RV32IM OoO processor. By
+develop the core microarchitecture for an RV32IM xxx processor. By
 Week 2, you will pick either a Tomasulo-style or ERR-style processor.
 Your group will be assigned a mentor CA/TA that has worked with that
 microarchitecture in the past. They will be your primary source of
@@ -113,7 +113,7 @@ relevant performance metrics, etc. This will serve as a way for your
 mentors to keep track of your design process, and provides material
 for your final report and presentation.
 
-Though it is 8 weeks long, `mp_ooo` is a fast-paced MP with heavy dependencies
+Though it is 8 weeks long, `` is a fast-paced MP with heavy dependencies
 between checkpoints. It is in your best interest to start early and stay synced
 with your mentor.
 
@@ -149,7 +149,7 @@ only being able to respond every other cycle.
 
 **Requirements:**
 - Draw a design block diagram (using draw.io or similar, **not handwritten!**)
-  of your OoO datapath [5]
+  of your xxx datapath [5]
   - Graded on completeness, state/information flow, and readability
 - Implement and test a parameterizable queue (depth and width) [3]
   - You are expected to identify relevant edge-cases of a FIFO, and show your
@@ -173,7 +173,7 @@ You will need to handle the DIV-0 edge case - check the RV32 ISA spec to
 understand the expected behavior.
 
 **Requirements (Tentative)**
-- Implement your OoO architecture such that it can execute all immediate and
+- Implement your xxx architecture such that it can execute all immediate and
   register instructions in RV32I
   - `AUIPC` is *optional* for this checkpoint
 - Integrate the multiplier IP with your processor to perform all `MUL`
@@ -182,11 +182,11 @@ understand the expected behavior.
   instructions in RV32M
 - Modify your `mp_verif` random testbench to test coverage on all the
   instructions required for this CP
-- Demonstrate that your processor is able to execute instructions out-of-order
-  (via `testcode/ooo_test.s`)
+- Demonstrate that your processor is able to execute instructions xxx-xx-xxxxx
+  (via `testcode/xxx_test.s`)
 - Show that your processor is compliant with the Spyglass linter
 
-*There will be no provided tests outside of `ooo_test.s`* - if you are unable to
+*There will be no provided tests outside of `xxx_test.s`* - if you are unable to
 correctly modify the random testbench, you must demonstrate
 correctness by writing your own comprehensive tests.
 
@@ -220,7 +220,7 @@ correctly. More information TBD.
 
 **Due: 5/9, 11:59PM**
 
-This is the fun part of `mp_ooo` - optimizing your processor! You will be
+This is the fun part of `` - optimizing your processor! You will be
 implementing processor enhancements of your choice. A list of example advanced
 features and their associated point values can be found in
 [ADVANCED_FEATURES.md](./docs/ADVANCED_FEATURES.md). Some of these features
@@ -254,7 +254,7 @@ To show up on the leaderboard, your processor must:
 
 Note that not all leaderboard benchmarks will be public. Staff will curate a
 series of "closed" benchmarks that will not be distributed as part of the
-`mp_ooo` release.
+`` release.
 
 ## Presentation & Final Report (10 Points)
 
@@ -310,15 +310,15 @@ models which only supported one outstanding request.
 <p align="center"> <img src="docs/images/bmem_write_queue_full.svg"/> <p
   align="center">Write Queue Full</p> </p>
 
-<p align="center"> <img src="docs/images/bmem_read_ooo.svg"/> <p
-  align="center">Out-Of-Order Read Response</p> </p>
+<p align="center"> <img src="docs/images/bmem_read_xxx.svg"/> <p
+  align="center">xxx-xx-xxxxx Read Response</p> </p>
 
 <p align="center"> <img src="docs/images/bmem_same_addr_rw.svg"/> <p
   align="center">Mixed Reads and Writes to the Same Destination</p> </p>
 
 # Teamwork
 
-As mentioned earlier, it is crucial in `mp_ooo` that you split work in a
+As mentioned earlier, it is crucial in `` that you split work in a
 sensible manner across your team. Frequent communication with your groupmates
 and your mentor are key to ensuring that this is done in a reasonable manner.
 
@@ -335,6 +335,7 @@ with such issues. Ensure that you take the following actions:
    group, and any important individual contributions.
 
 Team members who under-contribute or contribute nothing will lose part or all
-(100%) of their final `mp_ooo` grade, depending on severity. These points may be
+(100%) of their final `` grade, depending on severity. These points may be
 reallocated/awarded to other groupmates who had to over-contribute as a result.
+
 
